@@ -1,0 +1,10 @@
+(you can remove this file when you are ok with its content)
+
+IMPORTANT NOTES:
+
+- if you rename this layer, be sure to rename it accordling to in hidden
+    .layerapi2_label file in this directory
+- if you want to change dependencies of this layer, change them in hidden
+    .layerapi2_dependencies file in this directory
+- to better know what you can do these files, please refer to layerapi2 
+    documentation
