@@ -1,8 +1,8 @@
-site_name: metwork/mfextaddon_template doc
+site_name: metwork/mfextaddon_php doc
 theme:
   name: 'material'
   logo: 'images/logo.png'
-repo_url: https://github.com/metwork-framework/mfextaddon_template
+repo_url: https://github.com/metwork-framework/mfextaddon_php
 repo_name: 'GitHub'
 plugins:
   - macros:
