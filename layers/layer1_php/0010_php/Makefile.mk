@@ -13,4 +13,4 @@ LICENSE=PHP license (BSD-style license without "copyleft" restrictions associate
 
 all:: $(PREFIX)/bin/php
 $(PREFIX)/bin/php:
-	$(MAKE) --file=$(MFEXT_HOME)/share/Makefile.standard PREFIX=$(PREFIX) OPTIONS="--with-curl --with-readline --enable-fpm --enable-cgi" download uncompress configure build install
+	$(MAKE) --file=$(MFEXT_HOME)/share/Makefile.standard PREFIX=$(PREFIX) OPTIONS="--with-curl --with-readline=$(PREFIX)/../core --enable-fpm --enable-cgi" download uncompress configure build install
