@@ -1,1 +1,1 @@
-no_extra_lib
+libcuda.so.1
