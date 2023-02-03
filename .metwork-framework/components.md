@@ -1,6 +1,6 @@
 | Name | Version | Layer |
 | --- | --- | --- |
-| [getcomposer](https://getcomposer.org/) | 2.3.7 | php |
-| [php](https://www.php.net/) | 7.4.30 | php |
+| [getcomposer](https://getcomposer.org/) | 2.5.1 | php |
+| [php](https://www.php.net/) | 8.1.15 | php |
 
 *(2 components)*
