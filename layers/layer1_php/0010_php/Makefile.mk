@@ -14,7 +14,7 @@ LICENSE=PHP license (BSD-style license without "copyleft" restrictions associate
 
 all:: $(PREFIX)/bin/php
 $(PREFIX)/bin/php:
-	$(MAKE) --file=$(MFEXT_HOME)/share/Makefile.standard PREFIX=$(PREFIX) OPTIONS="--with-curl --with-readline=$(PREFIX)/../core --with-openssl --with-pgsql=$(PREFIX)/../scientific_core --enable-fpm --enable-cgi" download uncompress configure build install
+	$(MAKE) --file=$(MFEXT_HOME)/share/Makefile.standard PREFIX=$(PREFIX) OPTIONS="--with-curl --with-readline=$(PREFIX)/../core --with-openssl --with-pgsql=$(PREFIX)/../scientific_core --enable-fpm --enable-cgi -enable-mbstring --with-ldap=$(PREFIX)/../core --with-zlib --with-zip --enable-gd --enable-soap --with-pdo-pgsql=$(PREFIX)/../scientific_core" download uncompress configure build install
 
 	# init config files
 	cp ./build/php-$(VERSION)/php.ini-development $(PREFIX)/lib/php.ini
@@ -31,4 +31,3 @@ $(PREFIX)/bin/php:
 	sed -i 's/%{%Y-%m-%dT%H:%M:%S%z}/{% raw %}%{%Y-%m-%dT%H:%M:%S%z}{% endraw %}/g' $(PREFIX)/etc/php-fpm.d/www.conf
 	sed -i 's/^;error_log = .*/error_log = {{MFMODULE_RUNTIME_HOME}}\/log\/php-fpm.log/g' $(PREFIX)/etc/php-fpm.conf
 	sed -i 's/^include=.*/include = {{WWWCONF}}/g' $(PREFIX)/etc/php-fpm.conf
-
