@@ -24,11 +24,11 @@ $(PREFIX)/bin/php:
 	# configure php-fpm
 	sed -i 's/^user = nobody/;user = nobody/g' $(PREFIX)/etc/php-fpm.d/www.conf
 	sed -i 's/^group = nobody/;group = nobody/g' $(PREFIX)/etc/php-fpm.d/www.conf
-	sed -i 's/^listen = .*/listen = {{MFMODULE_RUNTIME_HOME}}\/var\/php-fpm.sock/g' $(PREFIX)/etc/php-fpm.d/www.conf
+	sed -i 's/^listen = .*/listen = {{MFMODULE_RUNTIME_HOME}}\/var\/{{PHP_SOCKET_NAME}}/g' $(PREFIX)/etc/php-fpm.d/www.conf
 	sed -i 's/^;listen.owner = .*/listen.owner = {{MFMODULE_RUNTIME_USER}}/g' $(PREFIX)/etc/php-fpm.d/www.conf
 	sed -i 's/^;listen.group = .*/listen.group = {{MFMODULE_RUNTIME_GROUP}}/g' $(PREFIX)/etc/php-fpm.d/www.conf
 	sed -i 's/^;listen.mode = .*/listen.mode = 0660/g' $(PREFIX)/etc/php-fpm.d/www.conf
 	sed -i 's/%{%Y-%m-%dT%H:%M:%S%z}/{% raw %}%{%Y-%m-%dT%H:%M:%S%z}{% endraw %}/g' $(PREFIX)/etc/php-fpm.d/www.conf
-	sed -i 's/^;error_log = .*/error_log = {{MFMODULE_RUNTIME_HOME}}\/log\/php-fpm.log/g' $(PREFIX)/etc/php-fpm.conf
+	sed -i 's/^;error_log = .*/error_log = {{MFMODULE_RUNTIME_HOME}}\/log\/{{PHP_LOGFILE}}/g' $(PREFIX)/etc/php-fpm.conf
 	sed -i 's/^include=.*/include = {{WWWCONF}}/g' $(PREFIX)/etc/php-fpm.conf
 
