@@ -14,7 +14,7 @@ LICENSE=PHP license (BSD-style license without "copyleft" restrictions associate
 
 all:: $(PREFIX)/bin/php
 $(PREFIX)/bin/php:
-	$(MAKE) --file=$(MFEXT_HOME)/share/Makefile.standard PREFIX=$(PREFIX) OPTIONS="--with-curl --with-readline=$(PREFIX)/../core --with-openssl --with-pgsql=$(PREFIX)/../scientific_core --enable-fpm --enable-cgi -enable-mbstring --with-ldap=$(PREFIX)/../core --with-zlib --with-zip --enable-gd --enable-soap --with-pdo-pgsql=$(PREFIX)/../scientific_core --with-mysqli" download uncompress configure build install
+	$(MAKE) --file=$(MFEXT_HOME)/share/Makefile.standard PREFIX=$(PREFIX) OPTIONS="--with-curl --with-readline=$(PREFIX)/../core --with-openssl --with-pgsql=$(PREFIX)/../scientific_core --enable-fpm --enable-cgi -enable-mbstring --with-ldap=$(PREFIX)/../core --with-zlib --with-zip --enable-gd --enable-soap --with-pdo-pgsql=$(PREFIX)/../scientific_core --with-mysqli --with-pdo-mysql" download uncompress configure build install
 
 	# init config files
 	cp ./build/php-$(VERSION)/php.ini-development $(PREFIX)/lib/php.ini
