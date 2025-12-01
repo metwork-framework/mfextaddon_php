@@ -2,9 +2,9 @@ include ../../../adm/root.mk
 include $(MFEXT_HOME)/share/package.mk
 
 export NAME=getcomposer
-export VERSION=2.5.1
+export VERSION=2.7.9
 export CHECKTYPE=MD5
-export CHECKSUM=90709ebe7b0b035e8bc653b37d409535
+export CHECKSUM=e5e527bb47304f8a99f9beb1fe8f501b
 
 DESCRIPTION=\
 Composer is a tool for dependency management in PHP.
