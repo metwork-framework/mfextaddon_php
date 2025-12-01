@@ -2,10 +2,10 @@ include ../../../adm/root.mk
 include $(MFEXT_HOME)/share/package.mk
 
 export NAME=php
-export VERSION=8.1.33
+export VERSION=8.4.15
 export EXTENSION=tar.xz
 export CHECKTYPE=MD5
-export CHECKSUM=36cd5b20659667cbddd171c6238dd64b
+export CHECKSUM=9b766937483f4288ddeca601b15c0277
 
 DESCRIPTION=\
 PHP is a popular general-purpose scripting language that is especially suited to web development
