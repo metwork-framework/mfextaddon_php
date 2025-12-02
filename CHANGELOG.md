@@ -1,5 +1,11 @@
 # release_2.3 CHANGELOG
 
+## v2.3.2 (2025-12-01)
+
+### New Features
+
+- bump php to 8.1.33 and composer to 2.7.9 (fix many CVEs) (#37)
+
 ## v2.3.1 (2025-05-13)
 
 - No interesting change
