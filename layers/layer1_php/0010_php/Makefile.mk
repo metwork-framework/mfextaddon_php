@@ -22,6 +22,7 @@ $(PREFIX)/bin/php:
 	mv $(PREFIX)/etc/php-fpm.d/www.conf.default $(PREFIX)/etc/php-fpm.d/www.conf
 
 	# configure php-fpm
+	sed -i 's/^expose_php = On/expose_php = Off/g' $(PREFIX)/lib/php.ini
 	sed -i 's/^user = nobody/;user = nobody/g' $(PREFIX)/etc/php-fpm.d/www.conf
 	sed -i 's/^group = nobody/;group = nobody/g' $(PREFIX)/etc/php-fpm.d/www.conf
 	sed -i 's/^listen = .*/listen = {{PHP_SOCKET_PATH}}/g' $(PREFIX)/etc/php-fpm.d/www.conf
