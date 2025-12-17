@@ -1,5 +1,11 @@
 # release_2.3 CHANGELOG
 
+## v2.3.3 (2025-12-16)
+
+### Bug Fixes
+
+- don't expose php version (backport #42) (#43)
+
 ## v2.3.2 (2025-12-01)
 
 ### New Features
