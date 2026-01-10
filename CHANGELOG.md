@@ -1,5 +1,11 @@
 # release_2.3 CHANGELOG
 
+## [Unreleased]
+
+### Bug Fixes
+
+- regexp syntax error for www pool configuration (backport #46) (#47)
+
 ## v2.3.3 (2025-12-16)
 
 ### Bug Fixes
