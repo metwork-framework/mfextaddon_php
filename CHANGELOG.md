@@ -1,6 +1,12 @@
 # release_2.3 CHANGELOG
 
-## [Unreleased]
+## v2.3.5 (2026-01-12)
+
+### Bug Fixes
+
+- don't display errors for www pool configuration (backport #48) (#49)
+
+## v2.3.4 (2026-01-10)
 
 ### Bug Fixes
 
