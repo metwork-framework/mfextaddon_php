@@ -10,5 +10,6 @@
 ### Bug Fixes
 
 - don't expose php version (#42)
+- don't display errors for www pool configuration (#48)
 
 
