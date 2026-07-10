@@ -2,7 +2,7 @@
 
 [//]: # (automatically generated from https://github.com/metwork-framework/github_organization_management/blob/master/common_files/CONTRIBUTING.md)
 
-**WARNING: work in progress**
+**WARNING: work in PROGRESS**
 
 
 ## Branching model
