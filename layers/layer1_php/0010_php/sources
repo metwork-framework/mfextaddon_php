@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-https://www.php.net/distributions/php-8.1.33.tar.xz
-=======
-https://www.php.net/distributions/php-8.4.27.tar.xz
->>>>>>> d7a9ab2 (feat: bump php from 8.4.23 to 8.4.27 (fix 2 critical CVE) (#58))
+https://www.php.net/distributions/php-8.2.35.tar.xz
