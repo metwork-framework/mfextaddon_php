@@ -1,5 +1,11 @@
 # release_2.3 CHANGELOG
 
+## v2.3.6 (2026-10-29)
+
+### New Features
+
+- bump php from 8.4.23 to 8.4.27 (fix 2 critical CVE) (#58)
+
 ## v2.3.5 (2026-01-12)
 
 ### Bug Fixes
